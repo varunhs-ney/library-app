@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Sidebar() {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -96,16 +95,6 @@ function Sidebar() {
           </div>
         )}
       </div>
-
-      {/* Navigation */}
-      <nav className="mt-6 space-y-2">
-        <Link to="/" className="block px-2 py-1 bg-blue-200 rounded">
-          Home
-        </Link>
-        <Link to="/upload" className="block px-2 py-1 bg-green-200 rounded">
-          Upload
-        </Link>
-      </nav>
     </div>
   );
 }
